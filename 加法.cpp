@@ -1,16 +1,21 @@
 #include<iostream>
 
-int main() {
+int Add() {//å°†åŠ æ³•ç®—æ³•å°è£…è¿›å‡½æ•°ä¸­
 	float a[999], sum = 0;
-	printf("ÇëÊäÈëµÚÒ»¸ö¼ÓÊı:");
+	printf("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªåŠ æ•°:");
 	scanf("%f", &a[0]);
 	sum = sum + a[0]; 
 	
 	for(int i = 1; i<999; i++) {
-		printf("ÇëÊäÈëµÚ%d¸ö¼ÓÊı:", i+1);
+		printf("è¯·è¾“å…¥ç¬¬%dä¸ªåŠ æ•°:", i+1);
 		scanf("%f", &a[i]);
 		sum += a[i];
-		printf("ÕâĞ©ÊıµÄºÍÊÇ%f\n", sum);
+		printf("è¿™äº›æ•°çš„å’Œæ˜¯%f\n", sum);
 	}
+}
+
+
+int main() {
+	Add();//åœ¨mainå‡½æ•°ä¸­è°ƒç”¨Addæ–¹æ³•
     return 0;
 }
